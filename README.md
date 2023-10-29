@@ -10,8 +10,21 @@
 - has_many :informations
 
 ## commentsテーブル
-|Column             |Type   |Options                   |
-|-------------------|-------|--------------------------|
-|
-|
-|
+|Column      |Type       |Options                        |
+|------------|-----------|-------------------------------|
+|content     |text       |null: false                    |
+|information |references |null: false, foreign_key: true |
+|user        |references |null: false, foreign_key: true |
+
+### Association
+- belongs_to :user
+
+## informationsテーブル
+|Column   |Type       |Options                        |
+|---------|-----------|-------------------------------|
+|process  |           |null: false
+|drawing  |           |
+|document |           |
+|stock    |           |
+|budget   |           |
+|minutes  |           |
