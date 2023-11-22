@@ -1,0 +1,7 @@
+.project {
+  display: flex;
+}
+
+.project-left {
+  margin-right: 200px;
+}
