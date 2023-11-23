@@ -5,18 +5,16 @@
     <div class='project-left'>
       <h3>案件No</h3>
       <%# each do projecsテーブル %>
-        <div class='project-num'>
-        <%# link_to '数字' do %>
-        </div>
+        <%= link_to '数字', '#', class:'project-num' %>
       <%# end %>
     </div>
     <div class='project-right'>
       <h3>案件名</h3>
       <%# each do projecsテーブル %>
-        <div class='project-name'>
-        <%# link_to '数字' do %>
-        </div>
+        <%= link_to '案件名', '#', class:'project-name' %>
       <%# end %>
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>
