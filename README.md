@@ -23,10 +23,18 @@
 |Column   |Type       |Options                        |
 |---------|-----------|-------------------------------|
 |process  |           |null: false
-|drawing  |           |
-|document |           |
-|stock    |           |
-|budget   |           |
-|minutes  |           |
+|drawing  |           |                               
+
+### Association
+- belongs_to :project
+- has_many :users
+- has_many :comments
 
 ## projectsテーブル
+|Column |Type    |Options     |
+|-------|--------|------------|
+|number |integer |null: false |
+|name   |string  |null: false |
+
+### Association
+- belongs_to :informations
